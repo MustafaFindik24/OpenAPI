@@ -13,16 +13,4 @@ public class CandidateApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(CandidateApplication.class, args);
 	}
-
-	@Bean
-	public OpenAPI customOpenAPI (@Value("${application-description})") String description,
-								  @Value("${application-version})") String version){
-		return new OpenAPI()
-				.info(new Info()
-				.title("Candidate API")
-						.version(version)
-						.description(description)
-						.license(new License()
-								.name("Candidate API License")));
-	}
 }

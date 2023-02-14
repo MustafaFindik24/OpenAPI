@@ -7,13 +7,16 @@ import javax.persistence.*;
 public class Candidate {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Integer id;
     private String firstName;
     private String lastName;
     private String email;
     private String cv;
 
-    public Candidate(Long id, String firstName, String lastName, String email, String cv) {
+    public Candidate(){
+    }
+
+    public Candidate(Integer id, String firstName, String lastName, String email, String cv) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -21,11 +24,11 @@ public class Candidate {
         this.cv = cv;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

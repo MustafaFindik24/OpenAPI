@@ -5,6 +5,7 @@ import com.app.candidate.Repository.CandidateRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class CandidateServiceImpl implements CandidateService{
@@ -16,8 +17,8 @@ public class CandidateServiceImpl implements CandidateService{
     }
 
     @Override
-    public Candidate getCandidate(Long id) {
-        return candidateRepository.findById(id).get();
+    public Optional<Candidate> getCandidate(Integer id) {
+        return candidateRepository.findById(id);
     }
 
     @Override
