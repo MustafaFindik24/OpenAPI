@@ -22,4 +22,11 @@ application.properties dosyasında Postgresql DB bağlantısı ve Swagger UI pro
 
 ![image](https://user-images.githubusercontent.com/91599453/219017613-2a3f90ad-9654-4751-9b0f-7442a9b32405.png)
 
+Repository, Service ve Controller katmanları oluşturularak CRUD işlemleri HTTP metotları kullanılarak sağlandı. Ricardson Maturity Model 2.Seviye path yazımı kullanıldı. Configuration anotasyonu kullanılarak sınıfın bir config dosyası hale getirilmesi sağlandı. OpenAPI sınıfı kullanılıp bean oluşturularak Swagger UI ın o beande çalışması sağlandı.
+
+![image](https://user-images.githubusercontent.com/91599453/219019868-732bc792-e29c-40a4-8991-e8370a8fb123.png)
+
+Daha sonra localhost:8080 portunda Swagger arayüzüne bağlanılıp metotların önizlenmesi sağlandı.
+
+![image](https://user-images.githubusercontent.com/91599453/219020050-8c3a763b-04cf-4842-ae4d-39665112e7ca.png)
 
