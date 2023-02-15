@@ -10,4 +10,6 @@ public interface CandidateService {
     public Optional<Candidate> getCandidate(Integer id);
     public List<Candidate> allCandidate();
     public Candidate saveCandidate(Candidate candidate);
+    public void deleteCandidate(Integer id);
+    public void updateCandidate(Candidate candidate);
 }
